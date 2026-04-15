@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder | John Weary Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">Cod<span>er</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#portfolio">SERVICES</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="projects.html">OUR PROJECTS</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary">Hire Me!</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="section-header">
+            <span>Get In Touch</span>
+            <h2>Let's Work Together</h2>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Me</h4>
+                        <p>rahatalizafar7@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Call Me</h4>
+                        <p>+92 324 7684600</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp Me</h4>
+                        <p>+92 324 7684600</p>
+                    </div>
+                </div>
+            </div>
+
+                <form id="contact-form" class="contact-form">
+
+                    <div class="input-row">
+                        <input type="text" name="user_name" placeholder="Full Name" required>
+                        <input type="email" name="user_email" placeholder="Email Address" required>
+                    </div>
+
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                    <button type="submit" id="submit-btn">Send Message</button>
+                    <p id="status-msg"></p>
+
+                </form>
+        </div>
+    </div>
+</section>
+
+
+    <footer class="main-footer">
+        <div class="footer-overlay"></div>
+        <div class="footer-container">
+
+            <div class="footer-brand-section">
+                <h2 class="footer-logo">Cod<span>e</span>r</h2>
+                <p class="brand-desc">
+                    Driven by a passion for creating high-end web solutions, I specialize in designing and developing
+                    websites and applications that
+                    are visually appealing, highly functional, and optimized for performance
+                </p>
+                <div class="newsletter-box">
+                    <h4>Let's Stay Connected</h4>
+                    <div class="input-group">
+                        <button type="submit">Join Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                <div class="grid-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">PHP Web Applications</a></li>
+                        <li><a href="#">API Integration</a></li>
+                        <li><a href="#">E-commerce Solutions</a></li>
+                        <li><a href="#">Custom WordPress Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="grid-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">My Journey</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Get in Touch</a></li>
+                    </ul>
+                </div>
+
+                <div class="grid-column">
+                    <h3>Contact Me</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i> rahatalizafar7@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +92 324 7684600</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Faisal Town, Lahore</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Rahat Ali Zafar</strong>. All Rights Reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<script src="script.js"></script>
+ <!-- EMAILJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // INIT EMAILJS
+            emailjs.init("6XleFiGqCrG-gBGnU");
+
+            const form = document.getElementById("contact-form");
+            const btn = document.getElementById("submit-btn");
+            const msg = document.getElementById("status-msg");
+
+            if (!form) {
+                console.error("Form not found!");
+                return;
+            }
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                btn.innerText = "Sending...";
+                msg.innerText = "";
+
+                // SEND EMAIL TO YOU
+                emailjs.sendForm("service_jdnh7ih", "template_woibxqc", form)
+                    .then(() => {
+
+                        // AUTO REPLY USER
+                        emailjs.sendForm("service_jdnh7ih", "template_s096i4d", form);
+
+                        msg.innerText = "Message sent successfully!";
+                        msg.style.color = "green";
+                        btn.innerText = "Send Message";
+
+                        form.reset();
+
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                        msg.innerText = "Failed to send message!";
+                        msg.style.color = "red";
+                        btn.innerText = "Send Message";
+                    });
+            });
+
+        });
+    </script>
+</body>
+
+</html>
