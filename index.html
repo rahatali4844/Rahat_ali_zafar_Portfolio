@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coder | John Weary Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -14,7 +15,7 @@
 
 <body>
 
-   <header>
+    <header>
         <nav class="container">
             <div class="logo">Cod<span>er</span></div>
             <ul class="nav-links">
@@ -24,14 +25,14 @@
                 <li><a href="projects.html">OUR PROJECTS</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            <a href="contact.html" class="btn btn-primary">Hire Me!</a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span><span></span><span></span>
-            </div>
+            <a href="contact.html" class="btn btn-primary hire_me">Hire Me!</a>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
 
-    
+
 
     <section class="hero container">
         <div class="hero-content">
@@ -41,20 +42,20 @@
             <p>PHP & WordPress Expert
                 Turning complex requirements into seamless, robust, and efficient web applications.</p>
             <div class="hero-btns">
-                <a href="Web Developer Rahat Ali.pdf" class="btn btn-primary">Download CV</a>
+                <a href="CV/Web Developer Rahat Ali.pdf" class="btn btn-primary">Download CV</a>
                 <a href="projects.html" class="btn btn-outline">My Work</a>
             </div>
         </div>
         <div class="hero-image">
             <div class="geometric-shapes"></div>
-            <img src="me.png" alt="John Weary" class="animate-img">
+            <img src="image/me.png" alt="John Weary" class="animate-img">
         </div>
     </section>
 
     <section id="about" class="about container">
         <div class="about-left" data-aos="fade-up" data-aos-duration="2000">
             <div class="img-wrapper">
-                <img src="men.avif" alt="Work Desk" class="bw-img">
+                <img src="image/men.avif" alt="Work Desk" class="bw-img">
                 <div class="exp-box">
                     <h3>06</h3>
                     <p>Years of <br> Experience</p>
@@ -136,7 +137,8 @@
     <section id="portfolio" class="portfolio container">
         <div class="section-title about-right" data-aos="fade-up" data-aos-duration="2000">
             <h2>What I Do</h2>
-            <p>I build simple, smooth, and reliable websites using PHP and WordPress, turning complex ideas into working solutions.</p>
+            <p>I build simple, smooth, and reliable websites using PHP and WordPress, turning complex ideas into working
+                solutions.</p>
         </div>
         <div class="cards">
 
@@ -193,8 +195,7 @@
         </div>
 
         <div class="testimonials-container">
-            <div class="review-card" data-aos="fade-up"
-     data-aos-duration="2000">
+            <div class="review-card" data-aos="fade-up" data-aos-duration="2000">
                 <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
                 <div class="rating">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
@@ -213,8 +214,7 @@
                 </div>
             </div>
 
-            <div class="review-card featured" data-aos="fade-up"
-     data-aos-duration="2000">
+            <div class="review-card featured" data-aos="fade-up" data-aos-duration="2000">
                 <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
                 <div class="rating">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
@@ -233,8 +233,7 @@
                 </div>
             </div>
 
-            <div class="review-card" data-aos="fade-up"
-     data-aos-duration="2000">
+            <div class="review-card" data-aos="fade-up" data-aos-duration="2000">
                 <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
                 <div class="rating">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
@@ -264,12 +263,10 @@
     <section class="developer">
         <div class="cta-content container">
             <video autoplay muted loop class="bg-video">
-                <source src="mixkit-green-computer-code-scrolling-22760-hd-ready.mp4" type="video/mp4">
+                <source src="image/mixkit-green-computer-code-scrolling-22760-hd-ready.mp4" type="video/mp4">
             </video>
-            <h2 data-aos="fade-up"
-     data-aos-duration="2000">I'm Available For Freelancing</h2>
-            <a href="contact.html" class="btn btn-primary" data-aos="fade-up"
-     data-aos-duration="2000">Hire Me!</a>
+            <h2 data-aos="fade-up" data-aos-duration="2000">I'm Available For Freelancing</h2>
+            <a href="contact.html" class="btn btn-primary" data-aos="fade-up" data-aos-duration="2000">Hire Me!</a>
         </div>
     </section>
     <footer class="main-footer">
@@ -344,6 +341,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
     </script>
 </body>
 
