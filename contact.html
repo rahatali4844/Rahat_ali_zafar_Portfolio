@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coder | John Weary Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -14,7 +15,7 @@
 
 <body>
 
-    <header>
+     <header>
         <nav class="container">
             <div class="logo">Cod<span>er</span></div>
             <ul class="nav-links">
@@ -24,10 +25,10 @@
                 <li><a href="projects.html">OUR PROJECTS</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            <a href="#" class="btn btn-primary">Hire Me!</a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span><span></span><span></span>
-            </div>
+            <a href="contact.html" class="btn btn-primary hire_me">Hire Me!</a>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
 
@@ -199,6 +200,11 @@
             });
 
         });
+    </script>
+        <script>
+        function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
     </script>
 </body>
 
